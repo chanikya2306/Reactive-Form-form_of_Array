@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   amount: any
   amount1: any
   amount2: any
+  i:any
   constructor() { }
   ngOnInit(): void {
     this.form = new FormGroup(({
@@ -77,8 +78,8 @@ export class HomeComponent implements OnInit {
     }
 
   }
-  removeItem() {
-    this.list_of_items.pop(this.ice_cream.value)
-
+  removeItem(i: number) {
+    // this.list_of_items.pop(this.ice_cream.value)
+    this.list_of_items.splice(i,1)
   }
 }

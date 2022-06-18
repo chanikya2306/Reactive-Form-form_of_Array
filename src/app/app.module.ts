@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home/home.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FomarrayComponent } from './FormArray/fomarray/fomarray.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FomarrayComponent
   ],
   imports: [
     BrowserModule,
